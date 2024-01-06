@@ -29,8 +29,12 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <section class="main__container">
-      <div class="top__container">
+    <section class="main__container" role="main">
+      <div
+        class="top__container"
+        role="region"
+        aria-labelledby="yourResultHeading"
+      >
         <p class="your__result">Your Result</p>
 
         <div class="result__percentage__div">
@@ -38,7 +42,7 @@
           <p>of 100</p>
         </div>
 
-        <div class="great__div">
+        <div class="great__div" role="region" aria-labelledby="greatTitle">
           <h1 class="great__title">Great</h1>
 
           <p class="description">
@@ -47,7 +51,11 @@
         </div>
       </div>
 
-      <div class="bottom__container">
+      <div
+        class="bottom__container"
+        role="region"
+        aria-labelledby="summaryHeading"
+      >
         <h3>Summary</h3>
 
         <div class="reaction__div">
@@ -62,7 +70,7 @@
         </div>
 
         <div class="memory__div">
-          <img src="assets/images/icon-memory.svg" />
+          <img src="assets/images/icon-memory.svg" alt="icon-memory.svg" />
           <span class="title__memory"> Memory </span>
           <div>
             <span class="percentage__memory">92</span
@@ -71,7 +79,7 @@
         </div>
 
         <div class="verbal__div">
-          <img src="assets/images/icon-verbal.svg" />
+          <img src="assets/images/icon-verbal.svg" alt="icon-verbal.svg" />
           <span class="title__verbal">Verbal</span>
           <div>
             <span class="percentage__verbal">61</span
@@ -80,7 +88,7 @@
         </div>
 
         <div class="visual__div">
-          <img src="assets/images/icon-visual.svg" />
+          <img src="assets/images/icon-visual.svg" alt="icon-visual.svg" />
           <span class="title__visual">Visual</span>
           <div>
             <span class="percentage__visual">72</span
