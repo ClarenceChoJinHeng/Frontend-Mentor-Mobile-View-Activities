@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap");
+
+* {
+  margin: 0rem auto;
+  padding: 0px;
+  text-align: center;
+  font-family: "Montserrat", "sans-serif";
+  /* border: 1px solid black; */
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container,
+.top__image__container > .desktop__image,
+.top__image__container {
+  height: 55vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25vh auto;
+  max-width: 75vh;
+  background-color: hsl(0, 0%, 100%);
+  padding-left: 0vh;
+  border-radius: 1vh;
+  padding-bottom: 0vh;
+}
+
+.top__image__container {
+  margin-right: 0vh;
+  margin-left: 0vh;
+}
+
+.top__image__container > .desktop__image {
+  border-top-left-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+}
+
+.mobile__image {
+  display: none;
+}
+
+/* ===========[Bottom Container]=========== */
+
+.title__header > .title {
+  letter-spacing: 0.8vh;
+  color: hsla(158, 36%, 37%, 0.8);
+  text-align: left;
+  margin-left: 0vh;
+  margin-bottom: 2vh;
+  max-width: 20vh;
+  font-size: 1.5vh;
+  font-weight: 600;
+}
+
+.title__header > h1 {
+  font-family: "Fraunces", "sans-serif";
+  font-weight: bold;
+  color: hsl(212, 21%, 14%);
+  text-align: left;
+  max-width: 30vh;
+  line-height: 4vh;
+  font-size: 4.5vh;
+}
+
+.title__header > .description {
+  max-width: 30vh;
+  font-size: 1.8vh;
+  font-weight: 600;
+  text-align: left;
+  line-height: 3vh;
+  color: hsla(158, 36%, 37%, 0.6);
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.price__div {
+  display: flex;
+}
+
+.price__div > .first__price {
+  color: hsl(158, 36%, 37%);
+  font-size: 4vh;
+  font-weight: 700;
+  font-family: "Fraunces", "sans-serif";
+  margin-left: 0vh;
+  margin-right: 0vh;
+}
+
+.price__div > .second__price {
+  align-self: center;
+  margin-left: 2.5vh;
+  font-family: "Fraunces", "sans-serif";
+  color: hsl(158, 36%, 37%);
+  font-size: 1.5vh;
+}
+
+button {
+  display: flex;
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  padding: 1.8vh 0vh 1.8vh 0vh;
+  border: none;
+  cursor: pointer;
+  border-radius: 1vh;
+  margin-left: 0vh;
+  margin-top: 3vh;
+  transition: background-color 0.15s;
+}
+
+button:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
+.cart__icon {
+  margin-right: 0vh;
+  margin-left: 8vh;
+}
+
+.add__to__title {
+  margin-left: 1.5vh;
+  color: white;
+  font-weight: 600;
+  font-size: 1.8vh;
+}
+
+/* =====[Responsive Code]===== */
+
+@media screen and (max-width: 1440px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    max-width: 49vh;
+    padding: 0vh;
+  }
+
+  .top__image__container,
+  .mobile__image {
+    height: 35vh;
+    margin-top: 0vh;
+    width: 100%;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+  }
+
+  .bottom__container{
+    margin-top: 0vh;
+    margin-bottom: 7vh;
+    margin-left: 1vh;
+  }
+
+  .desktop__image {
+    width: auto;
+    display: none;
+    visibility: hidden;
+  }
+
+  .title__header > .title {
+    margin-left: 2.5vh;
+    margin-top: 3vh;
+  }
+
+  .title__header > h1 {
+    max-width: 40vh;
+    margin-left: 2.7vh;
+    line-height: 5vh;
+  }
+
+  .title__header > .description {
+    max-width: 42vh;
+    margin-left: 2.5vh;
+    text-align:left;
+    font-size: 2vh;
+    line-height: 3.5vh;
+  }
+
+  .mobile__image {
+    display: block;
+  }
+
+  .price__div > .first__price{
+    margin-left: 2.5vh;
+    margin-right: 1vh;
+    font-size: 5vh;
+  }
+
+  button{
+    max-width: 95%;
+    margin-left: 2.5vh;
+    align-items: center;
+  }
+
+  .cart__icon{
+    margin-left: 14vh;
+    margin-right:
+  }
+
+
+}
