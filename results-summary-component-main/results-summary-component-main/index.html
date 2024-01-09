@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!---Link css-->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Link font -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="main__container" role="main">
+      <div
+        class="top__container"
+        role="region"
+        aria-labelledby="yourResultHeading"
+      >
+        <p class="your__result">Your Result</p>
+
+        <div class="result__percentage__div">
+          <p class="result__percentage__first">76</p>
+          <p class="result__percentage__second">of 100</p>
+        </div>
+
+        <div class="great__div" role="region" aria-labelledby="greatTitle">
+          <p class="great__title">Great</p>
+
+          <p class="description">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="bottom__container"
+        role="region"
+        aria-labelledby="summaryHeading"
+      >
+        <h1>Summary</h1>
+
+        <div class="reaction__div">
+          <img src="assets/images/icon-reaction.svg" alt="icon-reaction.svg" />
+
+          <p class="title__reaction">Reaction</p>
+
+          <div>
+            <p class="percentage__reaction">80</p>
+            <p class="percentage__reaction__second">/ 100</p>
+          </div>
+        </div>
+
+        <div class="memory__div">
+          <img src="assets/images/icon-memory.svg" alt="icon-memory.svg" />
+          <p class="title__memory">Memory</p>
+          <div>
+            <p class="percentage__memory">92</p>
+            <p class="percentage__memory__second">/ 100</p>
+          </div>
+        </div>
+
+        <div class="verbal__div">
+          <img src="assets/images/icon-verbal.svg" alt="icon-verbal.svg" />
+          <p class="title__verbal">Verbal</p>
+          <div>
+            <p class="percentage__verbal">61</p>
+            <p class="percentage__verbal__second">/ 100</p>
+          </div>
+        </div>
+
+        <div class="visual__div">
+          <img src="assets/images/icon-visual.svg" alt="icon-visual.svg" />
+          <p class="title__visual">Visual</p>
+          <div>
+            <p class="percentage__visual">72</p>
+            <p class="percentage__visual__second">/ 100</p>
+          </div>
+        </div>
+
+        <button class="continue__button">Continue</button>
+      </div>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Clarence Cho</a>.
+    </div> -->
+  </body>
+</html>
